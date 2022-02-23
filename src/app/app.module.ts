@@ -11,11 +11,14 @@ import { MatIconModule } from "@angular/material/icon"
 import { MatDividerModule } from "@angular/material/divider";
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatMenuModule} from '@angular/material/menu';
+import { CircleProgressBarComponent } from './circle-progress-bar/circle-progress-bar.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavbarComponent,
+    CircleProgressBarComponent,
     
   ],
   imports: [
@@ -27,7 +30,15 @@ import {MatMenuModule} from '@angular/material/menu';
     MatIconModule,
     MatDividerModule,
     MatSlideToggleModule,
-    MatMenuModule
+    MatMenuModule,
+    NgCircleProgressModule.forRoot({
+      radius: 75,
+      outerStrokeWidth: 15,
+      innerStrokeWidth: 15,
+      outerStrokeColor: "#4882c2",
+      innerStrokeColor: "#e7e8ea",
+      animationDuration: 300,
+     })
   ],
   exports: [
     MatMenuModule
