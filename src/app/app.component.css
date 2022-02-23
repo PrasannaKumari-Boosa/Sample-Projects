@@ -1,0 +1,32 @@
+
+.nav-link[data-toggle].collapsed:after {
+    content: " ▾";
+}
+.nav-link[data-toggle]:not(.collapsed):after {
+    content: " ▴";
+}
+.nav-link {
+    color: grey;
+    padding: 5px;
+}
+.nav {
+    padding: 10px 15px;
+}
+#submenu1sub2 {
+    padding-left: 10px;
+}
+
+
+/*Media queries start here*/
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 768px) { 
+    #sidebar {
+       width: 30% !important;
+       overflow-x: scroll;
+    } 
+    .dataContainer {
+        width: 70% !important;
+     } 
+}
