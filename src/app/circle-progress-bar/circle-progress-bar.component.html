@@ -3,3 +3,20 @@
 <circle-progress [percent]="70" 
  [animation]="true" [space]="-15"
   [title]="70" [titleFontSize]="35" [showSubtitle]="false" [showUnits]="true" unitsFontSize="20"></circle-progress>
+<div class="row">
+    <div class="col-9">
+            <canvas
+                baseChart
+                [chartType]="'bar'"
+                [datasets]="chartData"
+                [labels]="labels"
+                [options]="chartOptions"
+                [legend]="true"
+                [colors]="colors"
+                (chartClick)="onChartClick($event)">
+            </canvas>
+    </div>
+    <div class="col-3">
+
+    </div>
+</div>

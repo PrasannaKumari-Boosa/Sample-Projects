@@ -13,6 +13,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatMenuModule} from '@angular/material/menu';
 import { CircleProgressBarComponent } from './circle-progress-bar/circle-progress-bar.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
       outerStrokeColor: "#4882c2",
       innerStrokeColor: "#e7e8ea",
       animationDuration: 300,
-     })
+     }),
+     ChartsModule
   ],
   exports: [
     MatMenuModule
