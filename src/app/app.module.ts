@@ -12,10 +12,13 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatMenuModule} from '@angular/material/menu';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ChartsModule } from 'ng2-charts';
+import { MaterialDesignComponent } from './material-design/material-design.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
     AppComponent,
+    MaterialDesignComponent,
     
   ],
   imports: [
@@ -28,18 +31,14 @@ import { ChartsModule } from 'ng2-charts';
     MatDividerModule,
     MatSlideToggleModule,
     MatMenuModule,
+    MatButtonModule,
     NgCircleProgressModule.forRoot({
-      radius: 75,
-      outerStrokeWidth: 15,
-      innerStrokeWidth: 15,
-      outerStrokeColor: "#4882c2",
-      innerStrokeColor: "#e7e8ea",
-      animationDuration: 300,
      }),
      ChartsModule
   ],
   exports: [
-    MatMenuModule
+    MatMenuModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
