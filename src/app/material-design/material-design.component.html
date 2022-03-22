@@ -1,2 +1,50 @@
 <p>material-design works!</p>
-<button mat-raised-button>Submit</button>
+<div>
+<button mat-button>Normal material button</button>
+<button mat-raised-button>Raised-button</button>
+<button mat-stroked-button>Stroked-button</button>
+<button mat-flat-button>Flat-button</button>
+</div>
+<mat-divider></mat-divider>
+<div>
+<button mat-icon-button>
+    <mat-icon>more_vert</mat-icon>
+</button>
+<button mat-icon-button>
+    <mat-icon>home</mat-icon>
+</button>
+<button mat-icon-button>
+    <mat-icon>menu</mat-icon>
+</button>
+<button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+<button mat-icon-button>
+    <mat-icon>open_in_new</mat-icon>
+</button>
+</div>
+<mat-divider></mat-divider>
+<div>
+    <button mat-fab color="primary">
+        <mat-icon>delete</mat-icon>
+    </button>
+    <button mat-fab color="accent">
+        <mat-icon>bookmark</mat-icon>
+    </button>
+    <button mat-fab color="warn">
+        <mat-icon>home</mat-icon>
+    </button>
+    <button mat-fab aria-label="Example icon button with a heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+</div><br><br>
+
+<!--Mat button toggle-->
+
+<div>
+    <mat-button-toggle #togglebtn checked disableRipple class="togglebutton">toggle button</mat-button-toggle>
+    {{togglebtn.checked}}
+</div>
+
+<!-- Material chips example with autocomplete -->
+  
